@@ -1,0 +1,14 @@
+version: "3"
+services:
+  db:
+    image: "postgres:10.6"
+    container_name: "local-itglue-db"
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: ItGlue
+    ports:
+      - "54320:5432"
+      - "5432:5432"
+    volumes:
+      - /var/lib/postgresql/data

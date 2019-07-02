@@ -1,0 +1,12 @@
+NODE_ENV: prod
+
+## Postgress version
+RDS_DB_HOST: your.production.host
+RDS_DB_NAME: productionName
+RDS_DB_USER: root
+RDS_DB_PASSWORD: productionPassword
+RDS_DB_ENGINE: postgres
+RDS_DB_ENGINE_VERSION: 10.6
+RDS_DB_STORAGE: 1
+RDS_DB_CLASS: db.t2.micro
+RDS_DB_PORT: 5432
