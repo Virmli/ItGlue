@@ -1,0 +1,168 @@
+{
+	"info": {
+		"_postman_id": "529c8a54-a517-40d1-a018-acbfd1a84f06",
+		"name": "ItGlueCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Init Data Base",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3002/dbsetup/init",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"dbsetup",
+						"init"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Health Check",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/healthcheck",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"healthcheck"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Interest Rate",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"interestRate\": 21\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/interest-rate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"interest-rate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get the recurring payment amount of a mortgage",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/payment-amount?askingPrice=500000&downPayment=50000&paymentSchedule=weekly&amortizationPeriod=25",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"payment-amount"
+					],
+					"query": [
+						{
+							"key": "askingPrice",
+							"value": "500000"
+						},
+						{
+							"key": "downPayment",
+							"value": "50000"
+						},
+						{
+							"key": "paymentSchedule",
+							"value": "weekly"
+						},
+						{
+							"key": "amortizationPeriod",
+							"value": "25"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get the mortgage amount",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/payment-amount?askingPrice=500000&downPayment=50000&paymentSchedule=weekly&amortizationPeriod=25",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"payment-amount"
+					],
+					"query": [
+						{
+							"key": "askingPrice",
+							"value": "500000"
+						},
+						{
+							"key": "downPayment",
+							"value": "50000"
+						},
+						{
+							"key": "paymentSchedule",
+							"value": "weekly"
+						},
+						{
+							"key": "amortizationPeriod",
+							"value": "25"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
