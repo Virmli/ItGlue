@@ -12,4 +12,5 @@ Steps to start the project:
 7) Run Health Check this will create interest rate record for itGlue company
 8) We have 3 api calls stated in the challenge.
 
-Note: I assumed that imput for this assignment will always be correct, so I did not implement sanitizers to check for input.
+Note: I assumed that input for this assignment will always be correct, so I did not implement sanitizers to check for input.
+Also I did not add test coverage.
